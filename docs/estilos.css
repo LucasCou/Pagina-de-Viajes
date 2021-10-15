@@ -1,0 +1,534 @@
+
+/**/
+
+
+@font-face {
+    src: url(Fuentes/StartingPoint.otf);
+    font-family: 'StartingPoint';
+}
+.StartingPoint {font-family: 'StartingPoint'}
+
+@font-face {
+    src: url(Fuentes/comic.ttf);
+    font-family: 'comic';
+}
+.comic {font-family: 'comic'}
+
+@font-face {
+    src: url(Fuentes/comicbd.ttf);
+    font-family: 'comicbd';
+}
+.comicbd {font-family: 'comicbd'}
+
+@font-face {
+    src: url(Fuentes/arial.ttf);
+    font-family: 'arial';
+}
+.arial {font-family: 'arial'}
+
+@font-face {
+    src: url(Fuentes/ARLRDBD.TTF);
+    font-family: 'arialredonda';
+}
+.arialredonda {font-family: 'arialredonda'}
+
+@font-face {
+    src: url(Fuentes/georgia.ttf);
+    font-family: 'georgia';
+}
+.georgia {font-family: 'georgia'}
+
+@font-face {
+    src: url(Fuentes/georgiabd.ttf);
+    font-family: 'georgiabd';
+}
+.georgiabd {font-family: 'georgiabd'}
+
+@font-face {
+    src: url(Fuentes/verdana.ttf);
+    font-family: 'verdana';
+}
+.verdana {font-family: 'verdana'}
+
+@font-face {
+    src: url(Fuentes/verdanabd.ttf);
+    font-family: 'verdanabd';
+}
+.verdanabd {font-family: 'verdanabd'}
+
+@font-face {
+    src: url(Fuentes/ARLRDBD.TTF);
+    font-family: 'ARLRDBD';
+}
+.ARLRDBD {font-family: 'ARLRDBD'}
+
+
+
+
+
+*{
+    margin: 0px;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+div#Header-Normal{
+    background-color: rgb(143, 143, 143);
+    width: 100%;
+    height: 210px;
+    
+    z-index: 1;
+   
+}
+
+
+
+
+
+
+div#Header-Fixed{
+    height: 64px;
+    width: 100%;
+    
+    position: fixed;
+    background-color: rgb(49, 49, 49);
+
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    
+
+}
+
+
+
+div#Header-Fixed-IZQUIERDA{
+    height: 55px;
+    
+    float: left;
+    
+
+    
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+div#Header-Fixed-DERECHA{
+    height:55px;
+    
+    margin-right: 10px;
+
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+div#BotonEspecialDerecha{
+    height: 40px;
+   
+    background-color: rgb(154, 46, 168);
+    border-radius: 10px;
+    padding-left: 3PX;
+    padding-right: 3PX;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+div#BotonEspecialDerecha:hover{
+    background-color: rgb(86, 27, 94);
+    
+    transition-duration: 0.5s;
+    transition-property:background-color, ;
+    transition-timing-function: cubic-bezier(normal);
+}
+
+
+
+
+.BotonesHeader{
+    height: 40px;
+   
+    margin-right: 10px;
+    margin-left: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.TextoBotonesHeader{
+   font-size: 15px;  
+   color: white;
+   font-family: 'ARLRDBD';
+   
+   padding-right: 3px;
+   padding-left: 3px;
+}
+
+.Espacios-de-Botones{
+    height: 40px;
+    width: 1px;
+    border-radius: 100px;
+    background-color: rgb(94, 94, 94);
+}
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CONTENEDORES Y FOOTER  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+div#contenedor{
+    background-color: rgb(224, 224, 224);
+    
+    min-height: calc(100vh - 120px - 150px);
+}
+
+div#contenedorinterno{
+    width: 1345px;
+    margin: 0px auto;
+    
+}
+
+
+
+div#footer{
+    background-color: rgb(119, 119, 119);
+    width: 100%;
+    height: 120px;
+    
+    clear:both;
+
+    margin-bottom: 0px;
+
+    display: flex;
+    justify-content: center, space-around;
+    
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CONTENEDORES Y FOOTER   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   BARRA DE SCROLL   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right, rgb(43, 16, 16) 0%, rgb(119, 119, 119) 75%);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    box-shadow: 0px 0px 3px 2px rgba(255, 255, 255, 0.74)
+    inset;
+}
+body::-webkit-scrollbar-thumb:active{
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.418)
+    inset;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgb(117, 117, 117); 
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   BARRA DE SCROLL   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+
+
+
+/*
+div#Homebox{
+    background-color: rgb(226, 136, 219);
+    width: 65px;
+    height: 35px;
+    float: left;
+}
+
+div#Acercadebox{
+    background-color: rgb(226, 136, 219);
+    width: 95px;
+    height: 35px;
+    float: left;
+}
+
+div#Contactobox{
+    background-color: rgb(226, 136, 219);
+    width: 90px;
+    height: 35px;
+    float: left;
+}
+*/
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        CONTACTO LOGOS      !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+div#logoeimagenbox{
+    height: 60px;
+    width: 400px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    position:relative;
+    
+}
+
+div#logos{
+    float:left;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        CONTACTO LOGOS      !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        COSAS DE "RECETAS"      !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+.circuloitem{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(53, 53, 180);
+    margin-left: 10px;
+    border-radius: 50%; /*esto lo hace circulo*/
+    float: left;
+    margin-right: 10px;
+    margin: 0px;
+    padding: 0px;
+   
+    
+}
+
+.circulopasos{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(12, 12, 104);
+    margin-left: 10px;
+    border-radius: 50%; /*esto lo hace circulo*/
+    float: left;
+    margin-right: 10px;
+    margin: 0px;
+    padding: 0px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.itemytextobox{
+    height: 20px;
+    padding-bottom: 20px;
+    
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.itemytextoboxpasos{
+    height: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+.textodecadaingrediente{
+    font-size: 20px; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 5px; 
+    text-align: justify;
+    font-family: comic;
+}
+
+.textodecadapaso{
+    font-size: 20px; 
+    margin-left: 40px; 
+    margin-right: 20px; 
+    margin-bottom: 5px; 
+    text-align: justify;
+    font-family: comic;
+}
+
+.textonumerospasos{                      /*transform: translateX(-50%);  (para que quede centrado en eje x)*/
+   font-size: 22px; 
+   color: white;
+   font-family: comicbd;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        COSAS DE "RECETAS"      !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

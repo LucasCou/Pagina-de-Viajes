@@ -133,11 +133,52 @@ div#Header-Fixed-IZQUIERDA{
     
     float: left;
     
-
-    
     display: flex;
     align-items: center;
 }
+
+
+.BotonesHeader{
+    height: 64px;
+   
+
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.BotonesHeader:hover{
+    background-color: rgb(27, 27, 27);
+
+    transition-duration: 0.2s;
+    transition-property:background-color, ;
+    transition-timing-function: cubic-bezier(normal);
+}
+
+
+
+.TextoBotonesHeader{
+   font-size: 15px;  
+   color: white;
+   font-family: 'ARLRDBD';
+   
+   padding-right: 3px;
+   padding-left: 3px;
+
+}
+
+
+.Espacios-de-Botones{
+    height: 40px;
+    width: 1px;
+    border-radius: 100px;
+    background-color: rgb(94, 94, 94);
+}
+
+
 
 
 
@@ -181,33 +222,7 @@ div#BotonEspecialDerecha:hover{
 
 
 
-.BotonesHeader{
-    height: 40px;
-   
-    margin-right: 10px;
-    margin-left: 10px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
-
-.TextoBotonesHeader{
-   font-size: 15px;  
-   color: white;
-   font-family: 'ARLRDBD';
-   
-   padding-right: 3px;
-   padding-left: 3px;
-}
-
-.Espacios-de-Botones{
-    height: 40px;
-    width: 1px;
-    border-radius: 100px;
-    background-color: rgb(94, 94, 94);
-}
 
 
 

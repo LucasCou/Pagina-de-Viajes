@@ -98,7 +98,7 @@ a{
 
 
 div#Header-Normal{
-    background-color: rgb(143, 143, 143);
+    background-color: #152b3f;
     width: 100%;
     height: 210px;
     
@@ -116,7 +116,7 @@ div#Header-Fixed{
     width: 100%;
     
     position: fixed;
-    background-color: rgb(49, 49, 49);
+    background-color: #0a141d;
 
     display: flex;
     justify-content: space-between;
@@ -126,7 +126,7 @@ div#Header-Fixed{
 
 }
 
-
+/* !!!!!!!        IZQUIEDAAAAA     !!!!!!! */
 
 div#Header-Fixed-IZQUIERDA{
     height: 55px;
@@ -148,12 +148,11 @@ div#Header-Fixed-IZQUIERDA{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .BotonesHeader:hover{
-    background-color: rgb(27, 27, 27);
+    background-color: #133049;
 
-    transition-duration: 0.2s;
+    transition-duration: 0s;
     transition-property:background-color, ;
     transition-timing-function: cubic-bezier(normal);
 }
@@ -181,7 +180,7 @@ div#Header-Fixed-IZQUIERDA{
 
 
 
-
+/* !!!!   DERECHAAAA      !!!!!!! */
 
 div#Header-Fixed-DERECHA{
     height:55px;
@@ -231,13 +230,13 @@ div#BotonEspecialDerecha:hover{
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CONTENEDORES Y FOOTER  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CONTENEDORES   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
 div#contenedor{
     background-color: rgb(224, 224, 224);
     
-    min-height: calc(100vh - 120px - 150px);
+    min-height: calc(100vh - 248px  - 210px);
 }
 
 div#contenedorinterno{
@@ -246,24 +245,126 @@ div#contenedorinterno{
     
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CONTENEDORES   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
-div#footer{
-    background-color: rgb(119, 119, 119);
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      FOOTER     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.footer{
+    background-color: #0a141d;
     width: 100%;
-    height: 120px;
     
+    
+    
+    /*     
     clear:both;
 
     margin-bottom: 0px;
 
     display: flex;
-    justify-content: center, space-around;
+    justify-content: center, space-around; */
+}
+
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    
+    
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding-top: 45px;
+    padding-bottom: 20px;
     
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CONTENEDORES Y FOOTER   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.footer .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
+.footer .grupo-1 .sobre-nosotros a{
+    display: inline-block;
+    text-decoration: none;
+    
+    line-height: 25px;
+    color: rgb(216, 216, 216);
+    
+    margin-bottom: 5px;
+    
+   
+    transition: all 300ms ease;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo-1 .red-social a:hover{
+    background-color: #16385a;
+    color: #3a8eaf;
+}
+
+
+/* !!  GRUPO 2 (COPY) !! */
+
+.footer .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding-top: 35px;
+    }
+}
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      FOOTER     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+ 
 
 
 
@@ -274,7 +375,7 @@ body::-webkit-scrollbar{
     width: 15px;
 }
 body::-webkit-scrollbar-thumb{
-    background: linear-gradient(to right, rgb(43, 16, 16) 0%, rgb(119, 119, 119) 75%);
+    background: linear-gradient(to right, rgb(18, 10, 39) 0%, rgb(68, 37, 139) 75%);
     border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb:hover{
@@ -286,7 +387,7 @@ body::-webkit-scrollbar-thumb:active{
     inset;
 }
 body::-webkit-scrollbar-track{
-    background-color: rgb(117, 117, 117); 
+    background-color: rgb(16, 4, 24); 
 }
 
 
@@ -299,133 +400,6 @@ body::-webkit-scrollbar-track{
 
 
 
-/*
-div#Homebox{
-    background-color: rgb(226, 136, 219);
-    width: 65px;
-    height: 35px;
-    float: left;
-}
-
-div#Acercadebox{
-    background-color: rgb(226, 136, 219);
-    width: 95px;
-    height: 35px;
-    float: left;
-}
-
-div#Contactobox{
-    background-color: rgb(226, 136, 219);
-    width: 90px;
-    height: 35px;
-    float: left;
-}
-*/
-
-
-
-
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        CONTACTO LOGOS      !!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-div#logoeimagenbox{
-    height: 60px;
-    width: 400px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    position:relative;
-    
-}
-
-div#logos{
-    float:left;
-}
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        CONTACTO LOGOS      !!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        COSAS DE "RECETAS"      !!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-.circuloitem{
-    height: 8px;
-    width: 8px;
-    background-color: rgb(53, 53, 180);
-    margin-left: 10px;
-    border-radius: 50%; /*esto lo hace circulo*/
-    float: left;
-    margin-right: 10px;
-    margin: 0px;
-    padding: 0px;
-   
-    
-}
-
-.circulopasos{
-    height: 30px;
-    width: 30px;
-    background-color: rgb(12, 12, 104);
-    margin-left: 10px;
-    border-radius: 50%; /*esto lo hace circulo*/
-    float: left;
-    margin-right: 10px;
-    margin: 0px;
-    padding: 0px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    
-}
-
-.itemytextobox{
-    height: 20px;
-    padding-bottom: 20px;
-    
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
-}
-
-
-.itemytextoboxpasos{
-    height: 20px;
-    padding-bottom: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    
-}
-
-.textodecadaingrediente{
-    font-size: 20px; 
-    margin-left: 20px; 
-    margin-right: 20px; 
-    margin-bottom: 5px; 
-    text-align: justify;
-    font-family: comic;
-}
-
-.textodecadapaso{
-    font-size: 20px; 
-    margin-left: 40px; 
-    margin-right: 20px; 
-    margin-bottom: 5px; 
-    text-align: justify;
-    font-family: comic;
-}
-
-.textonumerospasos{                      /*transform: translateX(-50%);  (para que quede centrado en eje x)*/
-   font-size: 22px; 
-   color: white;
-   font-family: comicbd;
-}
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        COSAS DE "RECETAS"      !!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
 

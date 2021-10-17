@@ -96,15 +96,13 @@ a{
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-
+/* 
 div#Header-Normal{
     background-color: #152b3f;
+    height: 210px; 
     width: 100%;
-    height: 210px;
-    
-    z-index: 1;
-   
-}
+    z-index: 1;   
+}  */
 
 
 
@@ -115,6 +113,8 @@ div#Header-Fixed{
     height: 64px;
     width: 100%;
     
+    z-index: 1;
+
     position: fixed;
     background-color: #0a141d;
 
@@ -194,12 +194,12 @@ div#Header-Fixed-DERECHA{
 }
 
 div#BotonEspecialDerecha{
-    height: 40px;
+    height: 50px;
    
-    background-color: rgb(154, 46, 168);
-    border-radius: 10px;
-    padding-left: 3PX;
-    padding-right: 3PX;
+    background-color: rgb(51, 31, 168);
+    border-radius: 7px;
+    padding-left: 10PX;
+    padding-right: 10PX;
     
     
     display: flex;
@@ -207,13 +207,10 @@ div#BotonEspecialDerecha{
     justify-content: center;
     
 }
-
-
-
 div#BotonEspecialDerecha:hover{
-    background-color: rgb(86, 27, 94);
+    background-color: rgb(34, 22, 102);
     
-    transition-duration: 0.5s;
+    transition-duration: 0.15s;
     transition-property:background-color, ;
     transition-timing-function: cubic-bezier(normal);
 }
@@ -234,18 +231,143 @@ div#BotonEspecialDerecha:hover{
 
 
 div#contenedor{
-    background-color: rgb(224, 224, 224);
+    background-color: #1d215f;  /*rgb(224, 224, 224)*/
     
-    min-height: calc(100vh - 248px  - 210px);
+    min-height: calc(100vh - 248px  - 210px);  
+}
+/* div#contenedor .box-imagen{
+    border: rgb(203, 218, 0) solid 10px;
+    width:min-content;  
+}
+div#contenedor .box-imagen img{
+    width: 600px;
+} */
+
+.box-separadora-comienzo{
+    width: 100%;
+    height: 64px;
+    background-color: rgb(32, 255, 2);
 }
 
 div#contenedorinterno{
-    width: 1345px;
+    width: 1200px;
     margin: 0px auto;
-    
+    /* background-color:blueviolet; */
+
+    /* display: flex;
+    justify-content: center; */
+
+    display: grid;
+    grid-template-columns: auto;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CONTENEDORES   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CUERPO   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!  SLIDER  !!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!  SLIDER  !!!!!!!!!!!!!!!!!!!!*/
+
+
+
+/*!!!!!!!!!!!!!!!!  GRILLA  !!!!!!!!!!!!!!!!!!!!*/
+
+.Grilla{
+    width: 98%;
+    display: grid;
+    grid-template-columns: auto;   
+    grid-template-rows: auto auto;   
+}
+.Grilla figure .Cerro{
+    background-image: url(Imágenes/Noroeste/Cerro.jpg);
+    height: 200px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: black;
+    border: white solid 3px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px; 
+}
+.Grilla figure .Casa-Tucuman{
+    background-image: url(Imágenes/Noroeste/Casa-Tucuman.jpg);
+    height: 200px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: black;
+    border: white solid 3px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px; 
+}
+
+
+
+
+.Grilla .Box{
+    height: 100px;
+    width: 400px;
+    padding: 5px;
+    
+    border-radius: 20px;
+    background-color: rgba(86, 29, 139, 0.63);
+    /* text-align: center; */
+    
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.Grilla .Box H1{
+    color: black;
+    font-family: georgiabd;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 5px;
+}
+.Grilla .Box p{
+    color: black;
+    font-family: georgia;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+
+
+
+/*          EJEMPLO DE IMAGEN RESPONSIVE             */
+/* .Grilla .box1{
+    grid-column: 1 / span 3;
+
+    background-image: url(Imágenes/Cerro.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 192px;
+}
+@media screen and (max-width: 1920px){
+    .Grilla .box1{
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 95%;
+        height: 192px;
+    }
+} */
+
+/*!!!!!!!!!!!!!!!!  GRILLA  !!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CUERPO   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      FOOTER     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/

@@ -63,70 +63,76 @@
 
     <div id="contenedor">
 
-
         <div class="box-separadora-comienzo"></div>
         <div id="contenedorinterno">
 
+            <center>
+                <pre>
             
-            <div class="Titulo-Form"><h2>Formulario de Registro</h2></div>
-
-            <form action="Datos-Registro.html" target="_blank" autocomplete="off">
-                <fieldset style="width: fit-content; border-color: rgb(63, 13, 156); border-width: 5px;">
-
-                    <label for="Nombre">Nombre: </label> <input class="Datos" required type="text" name="Nombre" placeholder="Ingrese su nombre aquí..."> <br> <br>
-                    <label for="Apellido">Apellido: </label> <input class="Datos" required type="text" name="Apellido" placeholder="Ingrese su apellido aquí..."> <br> <br>
-                    <label for="Direccion">Dirección (opcional): </label> <input class="Datos" type="text" name="Direccion" placeholder="Ingrese su dirección aquí..."> <br> <br>
-                    <label for="Fecha_de_Nacimiento">Fecha de Nacimiento (opcional): </label> <input class="Datos" type="date" name="Fecha_de_Nacimiento" > <br> <br>
-                    <label for="Contrasena">Contraseña: </label> <input class="Datos" required type="password" name="Contrasena" placeholder="Ingrese su contraseña aquí..."> <br> <br>
-                    
-
-                    <p style="margin-bottom: 20px;">Genero:
-                        <input type="radio" name="Genero" value="hombre">Hombre
-                        <input type="radio" name="Genero" value="Mujer">Mujer
-                        <input type="radio" name="Genero" value="X">X
-                    </p>
-                    
-                    <!-- <p style="margin-bottom: 20px;">
-                        <label for="listado">Estudios Máximos Alcanzados: </label>
-                        <select style="background-color: rgb(161, 200, 231);" name="Estudios_Alcanzados" id="listado">
-                        <option value="Primarios">Primarios</option>
-                        <option value="Secundarios">Secundarios</option>
-                        <option value="Terciarios">Terciarios</option>
-                        <option value="Universitarios">Universitarios</option>
-                        </select>
-                    </p>
-                    <p style="margin-bottom: 20px;">Conocimientos:
-                        <input style="margin-left: 7px;" type="checkbox" name="Conocimiento" value="C"> C  
-                        <input style="margin-left: 7px;" type="checkbox" name="Conocimiento" value="C++"> C++  
-                        <input style="margin-left: 7px;" type="checkbox" name="Conocimiento" value="C#"> C#  
-                        <input style="margin-left: 7px;" type="checkbox" name="Conocimiento" value="HTML"> HTML  
-                        <input style="margin-left: 7px;" type="checkbox" name="Conocimiento" value="JavaScript"> JavaScript  
-                        <input style="margin-left: 7px;" type="checkbox" name="Conocimiento" value="Python"> Python
-                    </p> -->
-                    
-                    <input class="Boton-Enviar" type="submit" value="Enviar">
-                    <input class="Boton-Borrar" type="reset" value="Borrar">
-
-                </fieldset>
-            </form>
+                </pre>
+                <div class="Titulo-Form"> <h2>¡Formulario completado con éxito!</h2></div>
+            
+                <pre>
+            
+                </pre>
+            
+                <table border="1" align=center width="500" style="margin-bottom: 50px; color:white; font-family: verdana;">
+                <tr>
+                    <th align="center">Tipos de Datos</th>
+                    <th align="center">Datos Ingresados</th>
+                </tr>
+            
+                <script language="javascript">
+                var args = location.search.substr(1).split('&');
+                for (var i = 0; i < args.length; ++i) {
+                var parts = args[i].split('=');
+                if (parts != null) {
+                    var field = parts[0];
+                    var value = parts[1];
+                    if (value == null) {
+                    value = "null"
+                    }
+                    else {
+                    value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                    }
+            
+                    document.writeln('<tr><td align="center">' + field + '</td>');
+                    document.writeln('<td align="center">' + value + '</td></tr>');
+                }
+                }
+                </script>
+            
+            
+                </table>
+               
+                </center>
+            
 
             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>  
         
-            
-        
-
-
-
-
-
-
-
-
-
-
-
-        </div>
     </div> 
+
+
+
+
+
+
 
     <footer class="footer">
         <div class="grupo-1">

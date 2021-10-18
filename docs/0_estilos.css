@@ -200,7 +200,7 @@ div#BotonEspecialDerecha{
     border-radius: 7px;
     padding-left: 10PX;
     padding-right: 10PX;
-    
+    margin-left: 140px;
     
     display: flex;
     align-items: center;
@@ -481,6 +481,98 @@ div#contenedorinterno{
 } */
 
 /*!!!!!!!!!!!!!!!!  GRILLA  !!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!  FORMULARIO  !!!!!!!!!!!!!!!!!!!!*/
+
+.Titulo-Form h2{
+    color: white;
+    font-family: verdanabd;
+    font-size: 20px; 
+    margin-left: 10px; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+form{
+    width:max-content;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-family: verdana; 
+    background: linear-gradient(to right, rgb(22, 90, 146) 0%, rgb(55, 142, 214) 35%, rgb(73, 161, 233) 80%);
+}
+form .Datos{
+    background-color: rgb(161, 200, 231);
+}
+form .Boton-Enviar{
+    background-color: rgb(72, 202, 72); 
+    font-size: 18px;
+}
+form .Boton-Borrar{
+    background-color: rgb(233, 106, 106); 
+    font-size: 18px;
+}
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!  FORMULARIO  !!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!!!!!!!  SOBRE NOSOTROS  !!!!!!!!!!!!!!!!!!!!*/
+
+
+.Box-Sobre-Nosotros{
+    min-height: 200px;
+    width: 70%;
+    /* background-color: rgba(206, 54, 54, 0.637); */
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.Titulos-Sobre_Nosotros h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgb(241, 188, 188);
+}
+.Linea-Separadora-Sobre-Nosotros{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(99, 99, 99);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.Box-Sobre-Nosotros .Cuerpos-Sobre-Nosotros p{
+    font-family: arialredonda;
+    font-size: 20px;
+    color: rgb(172, 171, 171);
+    /* margin-bottom: 70px; */
+}
+.Box-Sobre-Nosotros .Cuerpos-Sobre-Nosotros p b{
+    font-family: arialredonda;
+    font-style:italic;
+    font-size: 20px;
+    color: rgb(172, 171, 171);
+    /* margin-bottom: 70px; */
+}
+.Box-Sobre-Nosotros .Cuerpos-Sobre-Nosotros h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(241, 188, 188);
+}
+.Box-Sobre-Nosotros .Cuerpos-Sobre-Nosotros a{
+    text-decoration: none;
+    color: rgb(180, 123, 123);
+}
+.Box-Sobre-Nosotros .Cuerpos-Sobre-Nosotros input{
+    background-color: cyan;
+    width: 200px;
+}
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!  SOBRE NOSOTROS  !!!!!!!!!!!!!!!!!!!!*/
 
 
 

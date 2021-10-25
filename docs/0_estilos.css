@@ -285,29 +285,29 @@ div#contenedorinterno{
 /*!!!!!!!!!!!!!!!!  GRILLA  !!!!!!!!!!!!!!!!!!!!*/
 
 .Grilla{
-    width: 98%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;    
+    grid-template-columns: 50% 50%;  
+    gap: 20px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 1.5%;
 }
 
 .Grilla figure .CUADROS{
     
     height: 200px;
-    width: auto;
+    width: 90%;
     border-radius: 25px;
     /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-top: 50px;
+    /* margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;  */
 }
-
-
-
-
 
 .Grilla .Box{
     height: 100px;
@@ -339,7 +339,8 @@ div#contenedorinterno{
 /* ////////   RESPONSIVE    /////////// */
 @media screen and (max-width: 800px){
     .Grilla {
-        grid-template-columns: 100%;       
+        grid-template-columns: 100%;   
+        margin-left: 4.5%;   
     }
     
 }

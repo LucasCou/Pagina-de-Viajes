@@ -82,7 +82,9 @@ a{
 
 
 
-
+@media screen and (max-width: 800px){
+    
+}
 
 
 
@@ -112,7 +114,7 @@ div#Header-Normal{
 div#Header-Fixed{
     height: 64px;
     width: 100%;
-    
+   
     z-index: 1;
 
     position: fixed;
@@ -122,8 +124,6 @@ div#Header-Fixed{
     justify-content: space-between;
     
     align-items: center;
-    
-
 }
 
 /* !!!!!!!        IZQUIEDAAAAA     !!!!!!! */
@@ -229,11 +229,16 @@ div#BotonEspecialDerecha:hover{
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   CONTENEDORES   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+.CONTENEDOR-GRANDE{
+    height: 100%;
+    width: 100%;
+}
+
 
 div#contenedor{
     background-color: #1d215f;  /*rgb(224, 224, 224)*/
-    
-    min-height: calc(100vh - 248px  - 210px);  
+    width: 100%;
+    min-height: calc(100vh - 245px);  
 }
 /* div#contenedor .box-imagen{
     border: rgb(203, 218, 0) solid 10px;
@@ -243,6 +248,9 @@ div#contenedor .box-imagen img{
     width: 600px;
 } */
 
+
+
+
 .box-separadora-comienzo{
     width: 100%;
     height: 64px;
@@ -250,9 +258,11 @@ div#contenedor .box-imagen img{
 }
 
 div#contenedorinterno{
-    width: 1200px;
+    max-width: 88%;
+    max-width: 1200px;
+    
     margin: 0px auto;
-    /* background-color:blueviolet; */
+    background-color:blueviolet;
 
     /* display: flex;
     justify-content: center; */
@@ -277,16 +287,16 @@ div#contenedorinterno{
 .Grilla{
     width: 98%;
     display: grid;
-    grid-template-columns: auto auto;   
-    grid-template-rows: auto auto;   
+    grid-template-columns: 50% 50%;   
+      
 }
 
 .Grilla figure .Obelisco{
     background-image: url(Imágenes/Buenos-Aires/Obelisco.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -298,9 +308,9 @@ div#contenedorinterno{
 .Grilla figure .Puerto-Madero{
     background-image: url(Imágenes/Buenos-Aires/Puerto-Madero.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -312,9 +322,10 @@ div#contenedorinterno{
 .Grilla figure .Caminito{
     background-image: url(Imágenes/Buenos-Aires/Caminito.jpg);
     height: 200px;
-    width: 565px;
+    /* width: 565px; */
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -328,9 +339,9 @@ div#contenedorinterno{
 .Grilla figure .Cerro{
     background-image: url(Imágenes/Norte/Cerro.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -342,9 +353,9 @@ div#contenedorinterno{
 .Grilla figure .Casa-Tucuman{
     background-image: url(Imágenes/Norte/Casa-Tucuman.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -356,9 +367,9 @@ div#contenedorinterno{
 .Grilla figure .Humahuaca{
     background-image: url(Imágenes/Norte/Humahuaca.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -370,9 +381,9 @@ div#contenedorinterno{
 .Grilla figure .Cataratas{
     background-image: url(Imágenes/Norte/Cataratas.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -386,9 +397,9 @@ div#contenedorinterno{
 .Grilla figure .Glaciar{
     background-image: url(Imágenes/Patagonia/Glaciar.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -400,9 +411,9 @@ div#contenedorinterno{
 .Grilla figure .Nahuel-Huapi{
     background-image: url(Imágenes/Patagonia/Nahuel-Huapi.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -414,9 +425,9 @@ div#contenedorinterno{
 .Grilla figure .Las-Grutas{
     background-image: url(Imágenes/Patagonia/Las-Grutas.jpg);
     height: 200px;
-    width: 565px;
+    width: auto;
     border-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     border: white solid 3px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -432,7 +443,7 @@ div#contenedorinterno{
 
 .Grilla .Box{
     height: 100px;
-    width: 350px;
+    width: 65%;
     padding: 5px;
     
     border-radius: 20px;
@@ -582,7 +593,7 @@ form .Boton-Borrar{
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      FOOTER     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.footer{
+footer{
     background-color: #0a141d;
     width: 100%;
     

@@ -106,70 +106,59 @@ div#Header-Normal{
     z-index: 1;   
 }  */
 
-
-
-
-
-
-div#Header-Fixed{
+.Header-Fixed{
     height: 64px;
     width: 100%;
-   
     z-index: 1;
-
     position: fixed;
     background-color: #0a141d;
-
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    
+    align-items: center; */
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    justify-items: center;
 }
 
-/* !!!!!!!        IZQUIEDAAAAA     !!!!!!! */
 
-div#Header-Fixed-IZQUIERDA{
+
+
+/* .navigation{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+} */
+
+
+
+.navigation-Botones-Normales{
     height: 55px;
-    
     float: left;
-    
     display: flex;
     align-items: center;
 }
-
-
-.BotonesHeader{
+.navigation-Botones-Normales .BotonesHeader{
     height: 64px;
-   
-
     padding-right: 10px;
     padding-left: 10px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.BotonesHeader:hover{
+.navigation-Botones-Normales .BotonesHeader:hover{
     background-color: #133049;
-
     transition-duration: 0s;
     transition-property:background-color, ;
     transition-timing-function: cubic-bezier(normal);
 }
-
-
-
-.TextoBotonesHeader{
+p{
    font-size: 15px;  
    color: white;
    font-family: 'ARLRDBD';
-   
    padding-right: 3px;
    padding-left: 3px;
-
 }
-
-
 .Espacios-de-Botones{
     height: 40px;
     width: 1px;
@@ -182,42 +171,54 @@ div#Header-Fixed-IZQUIERDA{
 
 /* !!!!   DERECHAAAA      !!!!!!! */
 
-div#Header-Fixed-DERECHA{
+.navigation-Boton-Especial{
     height:55px;
-    
     margin-right: 10px;
-
     display: flex;
     align-items: center;
-    
-    
 }
 
-div#BotonEspecialDerecha{
+.navigation-Boton-Especial .BotonEspecial{
     height: 50px;
-   
     background-color: rgb(51, 31, 168);
     border-radius: 7px;
-    padding-left: 10PX;
-    padding-right: 10PX;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: 140px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-div#BotonEspecialDerecha:hover{
+.navigation-Boton-Especial .BotonEspecial:hover{
     background-color: rgb(34, 22, 102);
-    
     transition-duration: 0.15s;
     transition-property:background-color, ;
     transition-timing-function: cubic-bezier(normal);
 }
 
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    background-image: url(Imágenes/ICONOS/Menu-Hamburguesa.jpg);
+    height: 45px;
+    width: 45px;
+}
 
+@media screen and (max-width: 800px){
+    .Header-Fixed{
+        grid-template-columns: auto 1fr;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .navigation-Botones-Normales{
+        display: none;
+    }
+    .navigation-Boton-Especial{
+        display: none;
+    }
 
-
+}
 
 
 
@@ -238,6 +239,7 @@ div#BotonEspecialDerecha:hover{
 div#contenedor{
     background-color: #1d215f;  /*rgb(224, 224, 224)*/
     width: 100%;
+    min-width: 360px;
     min-height: calc(100vh - 245px);  
 }
 /* div#contenedor .box-imagen{

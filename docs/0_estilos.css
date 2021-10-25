@@ -287,8 +287,7 @@ div#contenedorinterno{
 .Grilla{
     width: 98%;
     display: grid;
-    grid-template-columns: 50% 50%;   
-      
+    grid-template-columns: 50% 50%;    
 }
 
 .Grilla figure .Obelisco{
@@ -468,6 +467,15 @@ div#contenedorinterno{
     font-size: 15px;
 }
 
+/* ////////   RESPONSIVE    /////////// */
+@media screen and (max-width: 800px){
+    .Grilla {
+        grid-template-columns: 100%;       
+    }
+}
+
+
+
 
 
 
@@ -490,6 +498,9 @@ div#contenedorinterno{
         height: 192px;
     }
 } */
+
+
+
 
 /*!!!!!!!!!!!!!!!!  GRILLA  !!!!!!!!!!!!!!!!!!!!*/
 

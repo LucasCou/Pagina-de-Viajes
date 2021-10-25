@@ -290,139 +290,8 @@ div#contenedorinterno{
     grid-template-columns: 50% 50%;    
 }
 
-.Grilla figure .Obelisco{
-    background-image: url(Imágenes/Buenos-Aires/Obelisco.jpg);
-    height: 200px;
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-.Grilla figure .Puerto-Madero{
-    background-image: url(Imágenes/Buenos-Aires/Puerto-Madero.jpg);
-    height: 200px;
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-.Grilla figure .Caminito{
-    background-image: url(Imágenes/Buenos-Aires/Caminito.jpg);
-    height: 200px;
-    /* width: 565px; */
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-
-
-.Grilla figure .Cerro{
-    background-image: url(Imágenes/Norte/Cerro.jpg);
-    height: 200px;
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-.Grilla figure .Casa-Tucuman{
-    background-image: url(Imágenes/Norte/Casa-Tucuman.jpg);
-    height: 200px;
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-.Grilla figure .Humahuaca{
-    background-image: url(Imágenes/Norte/Humahuaca.jpg);
-    height: 200px;
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-.Grilla figure .Cataratas{
-    background-image: url(Imágenes/Norte/Cataratas.jpg);
-    height: 200px;
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-
-
-.Grilla figure .Glaciar{
-    background-image: url(Imágenes/Patagonia/Glaciar.jpg);
-    height: 200px;
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-.Grilla figure .Nahuel-Huapi{
-    background-image: url(Imágenes/Patagonia/Nahuel-Huapi.jpg);
-    height: 200px;
-    width: auto;
-    border-radius: 25px;
-    /* background-color: black; */
-    border: white solid 3px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px; 
-}
-.Grilla figure .Las-Grutas{
-    background-image: url(Imágenes/Patagonia/Las-Grutas.jpg);
+.Grilla figure .CUADROS{
+    
     height: 200px;
     width: auto;
     border-radius: 25px;
@@ -472,6 +341,7 @@ div#contenedorinterno{
     .Grilla {
         grid-template-columns: 100%;       
     }
+    
 }
 
 

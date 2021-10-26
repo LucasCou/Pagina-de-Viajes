@@ -107,7 +107,8 @@ div#Header-Normal{
 }  */
 
 .Header-Fixed{
-    height: 64px;
+    height: auto;
+    min-height: 64px;
     width: 100%;
     z-index: 1;
     position: fixed;
@@ -138,7 +139,7 @@ div#Header-Normal{
     display: flex;
     align-items: center;
 }
-.navigation-Botones-Normales .BotonesHeader{
+.BotonesHeader{
     height: 64px;
     padding-right: 10px;
     padding-left: 10px;
@@ -146,13 +147,13 @@ div#Header-Normal{
     align-items: center;
     justify-content: center;
 }
-.navigation-Botones-Normales .BotonesHeader:hover{
+.BotonesHeader:hover{
     background-color: #133049;
     transition-duration: 0s;
     transition-property:background-color, ;
     transition-timing-function: cubic-bezier(normal);
 }
-p{
+.Texto-Botones-Header{
    font-size: 15px;  
    color: white;
    font-family: 'ARLRDBD';
@@ -169,8 +170,6 @@ p{
 
 
 
-/* !!!!   DERECHAAAA      !!!!!!! */
-
 .navigation-Boton-Especial{
     height:55px;
     margin-right: 10px;
@@ -178,7 +177,7 @@ p{
     align-items: center;
 }
 
-.navigation-Boton-Especial .BotonEspecial{
+.BotonEspecial{
     height: 50px;
     background-color: rgb(51, 31, 168);
     border-radius: 7px;
@@ -189,21 +188,36 @@ p{
     align-items: center;
     justify-content: center;
 }
-.navigation-Boton-Especial .BotonEspecial:hover{
+.BotonEspecial:hover{
     background-color: rgb(34, 22, 102);
     transition-duration: 0.15s;
     transition-property:background-color, ;
     transition-timing-function: cubic-bezier(normal);
 }
 
+
+
 .menu-icon{
     display: none;
     cursor: pointer;
-    background-image: url(Imágenes/ICONOS/Menu-Hamburguesa.jpg);
-    height: 45px;
-    width: 45px;
+    background-image: url(Imágenes/ICONOS/Menu-Hamburguesa.png);
+    height: 30px;
+    width: 30px;
+    justify-self: end;
+    margin-right: 15%;
 }
 
+
+.Menu-Desplegable{
+    
+    width: 100%;
+    background-color: darkgreen;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+/*  RESPONSIVE  */
 @media screen and (max-width: 800px){
     .Header-Fixed{
         grid-template-columns: auto 1fr;
@@ -217,10 +231,18 @@ p{
     .navigation-Boton-Especial{
         display: none;
     }
+    .Menu-Desplegable{
+        display: block;
+    }
 
 }
 
-
+/* .cuadrado{
+    display: none;
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+} */
 
 
 

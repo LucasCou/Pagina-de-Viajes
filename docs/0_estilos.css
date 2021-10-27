@@ -6,7 +6,7 @@ body {
 }
 @media screen and (max-width: 800px) {
     body {
-        background:linear-gradient(rgb(255, 0, 212) 90px, rgb(255, 0, 0) 90px, rgb(255, 0, 0) calc(100% - 492px),rgb(99, 247, 0) calc(100% - 492px));
+        background:linear-gradient(rgb(255, 0, 212) 90px, rgb(255, 0, 0) 90px, rgb(255, 0, 0) calc(100% - 492px),rgb(99, 247, 0) calc(100% - 492px), rgb(99, 247, 0) 200%);
     }
 } 
 /* #0a141d

@@ -360,23 +360,27 @@ div#contenedor .box-imagen img{
 }
 
 .Grilla .Box{
-    height: 100px;
-    width: 65%;
+    height: auto;
+    /* width: 65%; */
+    width: auto;
     padding: 5px;
     
     border-radius: 20px;
     background-color: rgba(86, 29, 139, 0.63);
     /* text-align: center; */
-    
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .Grilla .Box H1{
     color: black;
     font-family: georgiabd;
-    margin-top: 10px;
     font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 5px;
+    margin-right: 5px;
+    
 }
 .Grilla .Box p{
     color: black;
@@ -384,6 +388,7 @@ div#contenedor .box-imagen img{
     margin-top: 15px;
     margin-left: 5px;
     font-size: 15px;
+    display: none;     /*         por esto no se ven los textos de la grilla          */
 }
 
 /* ////////   RESPONSIVE    /////////// */
@@ -435,8 +440,8 @@ div#contenedor .box-imagen img{
     font-family: verdanabd;
     font-size: 20px; 
     margin-left: 10px; 
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 form{
     width:max-content;

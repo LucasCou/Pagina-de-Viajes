@@ -106,7 +106,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-	background:#E6344A;
+	background:#0d385e;
 }
 
 header nav ul li a {
@@ -127,7 +127,7 @@ header nav ul li:hover .children {
 
 header nav ul li .children {
 	display: none;
-	background:#152b3d;
+	background:#182129;
 	position: absolute;
 	width: 150%;
 	z-index:1000;
@@ -279,7 +279,7 @@ header ul .logo-inicial-pc{
 
 
 div#contenedor{
-    background-color: #fbff00; /*#1d215f*/ /*rgb(224, 224, 224)*/
+    background-color: #1d215f; /*#1d215f*/ /*rgb(224, 224, 224)*/
     width: 100%;
     min-width: 360px;
     min-height: calc(100vh - 245px);  

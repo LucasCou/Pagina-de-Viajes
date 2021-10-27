@@ -18,22 +18,61 @@
     <script src="https://kit.fontawesome.com/965aac5382.js" crossorigin="anonymous"></script>
 
     <!-- RESPONSIVE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- RESPONSIVE -->
     
     <style>
         html{
-            font-size: 15px;
+            /* font-size: 15px; */
             background-color: red;
         }
     </style>
+
+
+    <!--    LO NUEVO DEL HEADER PIOLA    -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="ICONOS/fonts.css">
+    <!--    LO NUEVO DEL HEADER PIOLA    -->
+
+
+
+
 
    
 
 </head>
 <body>
 
-    <div class="CONTENEDOR-GRANDE">
+    <header>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><div class="logo-inicial-celular"></div><span class="icon-th-menu" style="font-size: 50px;"></span></a>
+		</div>
+
+		<nav>
+			<ul>
+                <div class="logo-inicial-pc"></div>
+				<li><a href="index.html"><span class="icon-office"></span>Buenos Aires</a></li>
+				<li><a href="1_Norte.html"><span class="icon-area-graph"></span>Norte</a></li>
+				<li class="submenu">
+					<a href="2_Patagonia.html"><span class="icon-snowflake-o1"></span>Patagonia<span class="caret icon-chevron-small-down"></span></a>
+					<ul class="children">
+						<li><a href="#">Glaciar Perito Moreno <span class="icon-triangle-left"></span></a></li>
+						<li><a href="#">Lago Nahuel Huapi <span class="icon-triangle-left"></span></a></li>
+						<li><a href="#">Las Grutas<span class="icon-triangle-left"></span></a></li>
+					</ul>
+				</li>
+				<li><a href="3_Registrarse.html"><span class="icon-slideshare"></span>Registrarse</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+
+
+
+    <!-- <div class="CONTENEDOR-GRANDE">
         <header class="Header-Fixed">
             
 
@@ -58,26 +97,23 @@
             
             <span class="menu-icon"></span>
 
-            <div class="Menu-Desplegable" style="display: none;">
-                <div class="BotonesHeader"><p class="Texto-Botones-Header">Buenos Aires</p></div>
-                <div class="BotonesHeader"><p class="Texto-Botones-Header">Norte</p></div>
-                <div class="BotonesHeader"><p class="Texto-Botones-Header">Patagonia</p></div>
-                <div class="BotonEspecial"><p class="Texto-Botones-Header">Registrarse</p></div>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Buenos Aires</a></li>
+                    <li><a href="#">Norte</a></li>
+                    <li><a href="#">Patagonia</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                </ul>
+            </nav>
 
             
-        </header>
+        </header> -->
     
 
 
 
 
         <div id="contenedor">
-
-            <div class="box-separadora-comienzo"></div>
-
-            <!-- <center><div class="box-imagen"><img src="Imágenes/Cerro.jpg" ></div></center>    -->
-
             <div id="contenedorinterno">
 
                 <div class="Grilla">

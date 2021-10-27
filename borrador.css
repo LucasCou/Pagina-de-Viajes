@@ -1,0 +1,164 @@
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/* 
+div#Header-Normal{
+    background-color: #152b3f;
+    height: 210px; 
+    width: 100%;
+    z-index: 1;   
+}  */
+
+.Header-Fixed{
+    height: auto;
+    min-height: 64px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    background-color: #0a141d;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+
+/* .navigation{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+} */
+
+
+
+.navigation-Botones-Normales{
+    height: 55px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.BotonesHeader{
+    height: 64px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BotonesHeader:hover{
+    background-color: #133049;
+    transition-duration: 0s;
+    transition-property:background-color, ;
+    transition-timing-function: cubic-bezier(normal);
+}
+.Texto-Botones-Header{
+   font-size: 15px;  
+   color: white;
+   font-family: 'ARLRDBD';
+   padding-right: 3px;
+   padding-left: 3px;
+}
+.Espacios-de-Botones{
+    height: 40px;
+    width: 1px;
+    border-radius: 100px;
+    background-color: rgb(94, 94, 94);
+}
+
+
+
+
+.navigation-Boton-Especial{
+    height:55px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.BotonEspecial{
+    height: 50px;
+    background-color: rgb(51, 31, 168);
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BotonEspecial:hover{
+    background-color: rgb(34, 22, 102);
+    transition-duration: 0.15s;
+    transition-property:background-color, ;
+    transition-timing-function: cubic-bezier(normal);
+}
+
+
+
+header .menu-icon{
+    display: none;
+    cursor: pointer;
+    background-image: url(Imágenes/ICONOS/Menu-Hamburguesa.png);
+    height: 30px;
+    width: 30px;
+    justify-self: end;
+    margin-right: 15%;
+}
+header nav ul{
+    background-color: blue;
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+header nav ul li:hover{
+    background-color: rgb(21, 21, 119);
+}
+header nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+
+/* .Menu-Desplegable{
+    
+    width: 300px;
+    background-color: darkgreen;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+} */
+
+
+/*  RESPONSIVE  */
+@media screen and (max-width: 800px){
+    .Header-Fixed{
+        grid-template-columns: auto 1fr;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .navigation-Botones-Normales{
+        display: none;
+    }
+    .navigation-Boton-Especial{
+        display: none;
+    }
+    
+
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/

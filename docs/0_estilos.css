@@ -285,7 +285,7 @@ div#contenedorinterno{
     max-width: 1200px;
     
     margin: 0px auto;
-    background-color:blueviolet;
+    /* background-color:blueviolet; */
 
     /* display: flex;
     justify-content: center; */

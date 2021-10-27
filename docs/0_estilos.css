@@ -2,16 +2,14 @@
 /**/
 
 body {
-    background:linear-gradient(rgb(255, 0, 212) 60px, rgb(255, 0, 0) 60px, rgb(255, 0, 0) 586px,rgb(99, 247, 0)586px);
+    background-color: #0a141d;
 }
-@media screen and (max-width: 800px) {
-    body {
-        background:linear-gradient(rgb(255, 0, 212) 90px, rgb(255, 0, 0) 90px, rgb(255, 0, 0) calc(100% - 492px),rgb(202, 247, 0) calc(100% - 492px), rgb(202, 247, 0) 200%);
-    }
-} 
-/* #0a141d
-#1d215f
-#0a141d */
+
+/* 
+#0a141d   header
+#1d215f   contenedor
+#0a141d   footer
+*/
 
 @font-face {
     src: url(Fuentes/StartingPoint.otf);
@@ -99,7 +97,7 @@ header {
 }
 
 header nav {
-	background:#0a141d7e;
+	background:#0a141d;
 	z-index:1000;
     width: 100%;
     /* width:95%; */
@@ -292,7 +290,7 @@ header ul .logo-inicial-pc{
 
 
 div#contenedor{
-    background-color: #1d215f94; 
+    background-color: #1d215f; 
     /*#1d215f*/ /*rgb(224, 224, 224)*/
     width: 100%;
     margin:0px;
@@ -528,7 +526,7 @@ form .Boton-Borrar{
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      FOOTER     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 footer{
-    background-color: #0a0a1d94;
+    background-color: #0a0a1d;
     width: 100%;
     /*clear:both;
     margin-bottom: 0px;

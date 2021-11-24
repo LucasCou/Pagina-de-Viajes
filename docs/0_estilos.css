@@ -1,4 +1,13 @@
 
+.cuadrado{
+    height: 100px;
+    width: 70%;
+    background-color: black;
+}
+
+
+
+
 /**/
 
 body {
@@ -178,6 +187,7 @@ header ul .logo-inicial-pc{
     margin-bottom: 5px;
     margin-left: 50px;
 }
+
 
 @media screen and (max-width: 800px) {
 	body {
@@ -448,11 +458,13 @@ form{
     margin-left: 10px;
     margin-bottom: 20px;
     font-size: 17px;
+    color: white;
     font-family: verdana; 
-    background: linear-gradient(to right, rgb(22, 90, 146) 0%, rgb(55, 142, 214) 35%, rgb(73, 161, 233) 80%);
+    background: #242a88;
+    /*background: linear-gradient(to right, rgb(22, 90, 146) 0%, rgb(55, 142, 214) 35%, rgb(73, 161, 233) 80%);*/
 }
 form .Datos{
-    background-color: rgb(161, 200, 231);
+    background-color: #7eaed4;
 }
 form .Boton-Enviar{
     background-color: rgb(72, 202, 72); 

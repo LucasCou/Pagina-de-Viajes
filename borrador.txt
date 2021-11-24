@@ -1,4 +1,14 @@
 
+mrgin:  *TODO*
+margin: *arriba*         *derecha*             *abajo*   *izquierda*  ;
+margin: *arriba-abajo*   *derecha-izquierda*                          ;
+margin: *arriba*         *derecha-izquierda*   *abajo*                ;
+
+
+
+
+
+
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
